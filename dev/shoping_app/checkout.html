@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        div>h1{
+            text-align: center;
+        }
+  .form{
+    position: relative;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px black;
+    width: 50%;
+    padding: 20px;
+    top: 50px;
+    border: none;
+    border-radius: 9px;
+  }
+  form input[type="text"],textarea,input[type="email"]{
+    padding: 5px;
+    margin-top: 8px;
+    width: 80%;
+    font-size: 1.1rem;
+    font-weight: 600px;
+  }
+  #addressspan{
+    display: inline-block;
+    position: relative;
+   bottom: 40px;
+  }
+  button{
+    background-color: rgb(129, 233, 129);
+    padding: 10px;
+    position: relative;
+    margin: auto;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 40px;
+    font-size: 1.1rem;
+    font-weight: 600px;
+  }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>Details</h1>
+        <form action="">
+            <div>
+                 <input type="text" id="name" name="name" placeholder="enter Name" required><span>*</span>
+            </div>
+           
+            <div>
+                  <input type="email" id="email" name="email" placeholder="enter Email" required><span>*</span>
+            </div>
+            
+            <div>
+               <textarea name="address" id="address" required placeholder="enter Dilivary Address"></textarea><span id="addressspan">*</span>
+            </div>
+
+          <fieldset>
+            <legend>Payment method</legend>
+            <input type="radio" id="card" name="Payment">
+            <label for="card">Credit Card</label>
+            <br>
+            <input type="radio" id="online" name="Payment">
+            <label for="online">PayPal</label>
+            <br>
+            <input type="radio" id="offline" name="Payment">
+            <label for="offline"> Cash on Delivery</label>
+          </fieldset>
+
+          <div id="confirmation">
+             <input type="checkbox" id="confirm1" name="confirm"><label for="">I confirm all the details above are correct.</label>
+             <br>
+             <input type="checkbox" id="confirm2" name="confirm"><label for="">I agree to the terms and conditions.</label>
+          </div>
+          <button type="submit" id="btn">checkout</button>
+        </form>
+    </div>
+
+    <script>
+        const btn=document.getElementById("btn");
+        btn.addEventListener("click",()=>{
+            localStorage.clear();
+            window.open("./mens.html","self", alert("your order is successfully completed !!!  thanks  for visit"));
+        })
+    </script>
+</body>
+</html>

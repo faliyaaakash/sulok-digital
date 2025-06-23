@@ -1,0 +1,205 @@
+ body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar{
+            height: max-content;
+            width: 100%;
+            background-color: rgb(13, 13, 58);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+        }
+        .logo{
+            position: relative;
+            margin-left: 6px;
+            top: 2px;
+        }
+        .cart{
+            position: relative;
+           margin-left: auto;
+           margin-right: 20px;
+           top: 18px;
+           cursor: pointer;
+           font-size: 1.5rem;
+        }
+        .tab-bar{
+            width: 100%;
+            height: max-content;
+            color: white;
+              font-family: Arial, Helvetica, sans-serif;
+              background-color: rgb(39, 39, 47);
+              display: flex;
+        }
+        .title{
+            position: relative;
+            top: 9px;
+            font-weight: 500;
+            font-size: 2rem;
+            margin-left: 8px;
+        }
+        .menubar{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .menubar>ul{
+              list-style-type: none;
+              display: flex;
+              gap: 20vw;
+              color: white;
+              text-decoration: none;
+        }
+        .menubar>ul a{
+              color: white;
+              text-decoration: none;
+        }
+        .menubar>ul li{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .menubar>ul li:hover{
+               background-color: rgb(28, 28, 34);
+        }
+        footer{
+            position: relative;
+            bottom: 0px;
+            background-color: rgb(39, 39, 47);
+        }
+        #pent,#Tshirts{
+     
+            position: relative;
+            padding: 5px;
+            top: 3rem;
+            margin: auto;
+            margin-bottom: 40px;
+            height: max-content;
+            width: 90%;
+            border: none;
+            box-shadow: 0px 0px 12px rgb(59, 59, 59);
+            background-color: aliceblue;
+            display: flex;
+            gap: 20px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        .item{
+            position: relative;
+            top: 1rem;
+            padding: 4px;
+            width: 170px;
+            height: 350px;
+            text-align: center;
+            font-weight: 700;
+            padding: 10px;
+        }
+        #btn{
+            background-color: rgb(211, 165, 253);
+            color: black;
+            font-weight: 800;
+            padding: 5px;
+            width: 100px;
+            font-weight: 600px;
+            border: 1px solid black;
+            border-radius: 8px;
+            margin: 5px;
+        }
+        #btn:active{
+           background-color: rgb(127, 63, 186);
+        }
+       
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(201, 201, 201);
+        }
+         
+        .container{
+            height: max-content;
+            position: relative;
+            display: grid;
+            grid-template-columns: 70% 30%;
+             top:40px ;
+        }
+        .shopping_cart{
+            grid-column: 1/2;
+            background-color: white;
+            min-height: 300px;
+            height: max-content;
+            margin: 20px;
+            padding: 20px;
+            border: none;
+            border-radius: 10px;
+        }
+        .side-bar{
+            margin: 20px;
+            background-color: white;
+            min-height: 300px;
+            border: none;
+            border-radius: 10px;
+            max-height: 100px;
+        }
+        
+        #itemdetails{
+            font-size: 1.1rem;
+            font-weight: 550;
+        } 
+        .total{
+
+            font-size: 1.4rem;
+            font-weight: 600;
+            top: 30px;
+        }
+        #quantity{
+            position: relative;
+            font-size: 1.3rem;
+            font-weight: 560;
+
+        }
+        .grand-total{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 800;
+        }
+        .side-bar button{
+            color: white;
+            display: block;
+            position: relative;
+            margin: auto;
+            border: none;
+            border-radius: 9px;
+            padding: 20px;
+            width: 150px;
+            top: 30px;
+            background-color: rgba(63, 63, 255, 0.693);
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+        .side-bar button:hover{
+            background-color: rgba(63, 63, 255, 0.809);
+        }
+        .side-bar button:active{
+             background-color: rgba(63, 63, 255, 0.913);
+        }
+        #clear{
+            font-size: 1.2rem;
+            font-weight: 575;
+            margin: 10px;
+           padding: 5px;
+           text-align: center;
+           position: relative;
+           top: 10px;
+        }
+        #clear a{
+             color: black;
+        }
+       #empty{
+        font-size: 1.6rem;
+        position: relative;
+        top:80px;
+        font-weight: 600;
+        text-align: center;
+        vertical-align: middle;
+       }

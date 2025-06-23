@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=shopping_cart" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js" defer></script> -->
+     <script src="cartscript.js" defer></script>
+</head>
+<body>
+     <nav class="navbar"> 
+          <div class="logo"><img src="./images/logo.png" alt="" height="80px"></div>
+          <div class="title">Fashion</div>
+          <div class="cart"><a href="cart.html" style="color: white;text-decoration: none;"><span class="material-symbols-outlined">shopping_cart</span></a></div>
+    </nav> 
+    <main>
+        <div class="tab-bar">
+            <div class="menubar">
+                <ul>
+                    <li><a href="mens.html">Mens</a></li>
+                    <li><a href="">Womens</a></li>
+                    <li><a href="">Kides</a></li>
+                </ul>
+            </div>
+        </div>
+   
+        <div class="container">
+            <div class="shopping_cart">
+                <h1 id="cartheading">Shopping Cart</h1>
+                <!-- <hr> -->
+                <div id="cartitems">
+                    <!-- <div id="itemdetails">
+                      <h2>item Name</h2>
+                      <div>${item.price}$ </div>
+                      <div id="quantity">${item.quantity}</div>
+                    </div>  
+                    <div class="total">Total: ${(item.quantity)*(item.price)}</div> -->
+                </div>
+                
+            </div>
+
+            <div class="side-bar">
+                <div class="grand-total">
+                    <hr>
+                    <div >
+                        Total : <span id="displaytotal">0</span>
+                    </div>
+                </div>
+                <div id="clear"><a href="">clear shope cart</a></div>
+                <button type="submit" id="buy">Proceed to Buy</button>
+            </div>
+
+        </div>
+                
+        </div>
+    
+  
+    <script>
+       
+
+  //  const cartDisplay = document.getElementById("cartitems");
+  //  const grandtotal=document.getElementById("displaytotal");
+  //   // Get cart items from localStorage
+  //   const mycart = JSON.parse(localStorage.getItem("cart")) ;
+    
+  //   let sumoftotal=0;
+
+  //   if (mycart.length=== 0) {
+  //     cartheading.textContent="";
+  //     cartDisplay.innerHTML = `<p id="empty">Cart is empty</p>`;
+  //   } else {
+  //     mycart.forEach((item) => {
+  //       cartDisplay.innerHTML += `
+  //        <hr>
+  //               <div id="cartitems">
+  //                   <div id="itemdetails">
+  //                     <h2>${item.name}</h2>
+  //                     <div>${item.price}$  (per pice) </div>
+  //                     <div id="quantity">${item.quantity}</div>
+  //                   </div>  
+  //                   <div class="total">Total: ${(item.quantity)*(item.price)}</div>
+  //               </div>`
+  //               sumoftotal=sumoftotal+((item.price)*(item.quantity));
+  //     });
+     
+  //   }
+  
+  // grandtotal.textContent=`${sumoftotal}`;
+
+
+
+
+
+
+  //  //script for clear cart
+  //       const cartheading=document.getElementById("cartheading");
+  //       const clearcart=document.getElementById("clear");
+  //       clearcart.addEventListener("click",()=>{
+  //         localStorage.clear();
+  //       });
+    
+  //       //script for procced to buy button
+  //       const buybutton=document.getElementById("buy");
+      
+  //            buybutton.addEventListener("click",()=>{
+  //             const c= cartheading.textContent
+  //               if(c===""){
+  //                 alert("cart is empty");
+  //               }else{
+  //                  cartheading.textContent="";
+  //                  cartDisplay.innerHTML = `<p id="empty">Cart is empty</p>`;
+  //                  window.open("./checkout.html","self");
+  //               }
+  //       })
+        
+  </script>
+    
+  
+
+
+</body>
+</html>
